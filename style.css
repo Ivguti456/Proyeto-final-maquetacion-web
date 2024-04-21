@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255)   
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+      
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+
+#menu-icon{
+    /* display: none; */
+    font-size: 35px;
+    z-index: 150; 
+    cursor: pointer; 
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#menu-icon-action{
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%,#131313 75% );
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+section{
+    padding: 0 10%;
+    
+}
+
+
+.hero-text h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+    
+}
+
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero-text p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.hero-img img{
+    margin: 10px 0 10px 0px;
+    height: auto;
+    transition: all 3s linear;
+    width: 80%;
+    
+}
+
+
+.hero-img img:hover{
+    width: 100%;
+    opacity: 0.5;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: #385e70;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 16px;
+    transition: all .5s ease;
+    
+}
+
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(10px);
+}
+
+
+.hero-text a.videos{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.videos i{
+    margin-left: 7px;
+}
+
+.toggle-icons{
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    font-size: 50px;
+    background-color: #385e7053;
+    border-radius: 30px;
+}
+
+.toggle-icons i{
+    display: block;
+    margin: 15px 10px;
+    transition: all .5s ease;
+}
+
+.toggle-icons i:hover{
+        color: rgb(21, 22, 22);
+        transform: translateY(-5px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+
+.scroll-down i{
+    display: block;
+    background-color: #385e70;
+    font-size: 50px;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(10px);
+}
+
+
+@media (max-width: 992px){
+
+    .scroll-down{
+        display: none;
+    }
+    .toggle-icons{
+        display: none;
+       }
+    
+}
+
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .menu-icon-action{
+        display: block;
+    }
+
+    .hero-text{
+        text-align: center;
+        padding-top:  100px;
+    }
+
+    .hero{
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+    .toggle-icons{
+        display: none;
+       }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.912);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        transition:  all 0.5s ease;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .navlist a{
+        margin-left: 0;
+    }
+
+    #menu-toggle:checked + label.menu-icon-action + ul{
+        right: 0;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
