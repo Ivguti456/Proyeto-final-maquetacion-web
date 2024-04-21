@@ -1,1 +1,1 @@
-gnome-brillante-c0de29.netlify.app
+proyecto-final-curso-maquetacion-ivgu.netlify.app
